@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 int Factorial(int n = 0);
@@ -7,8 +7,8 @@ void main()
 {
 	setlocale(LC_ALL, "Russian");
 	int n;
-	cout << "Ââåäèòå ÷èñëî, ôàêòîðèàë êîòîðîãî íóæíî âûâåñòè: "; cin >> n;
-	cout << "Ôàêòîðèàë ÷èñëà: " << n << " = " << Factorial(n);
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾, Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð½ÑƒÐ¶Ð½Ð¾ Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸: "; cin >> n;
+	cout << "Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ñ‡Ð¸ÑÐ»Ð°: " << n << " = " << Factorial(n);
 }
 int Factorial(int n)
 {

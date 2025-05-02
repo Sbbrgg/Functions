@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 double Power(double a, int n);
@@ -8,9 +8,9 @@ void main()
 	setlocale(LC_ALL, "Russian");
 
 	int a, N;
-	cout << "Ââåäèòå îñíîâàíèå ñòåïåíè: "; cin >> a;
-	cout << "Ââåäèòå ïîêàçàòåëü ñòåïåíè: "; cin >> N;
-	cout << endl << "×èñëî " << a << " â ñòåïåíè " << N << " = " << Power(a, N);
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸: "; cin >> a;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð¾ÐºÐ°Ð·Ð°Ñ‚ÐµÐ»ÑŒ ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸: "; cin >> N;
+	cout << endl << "Ð§Ð¸ÑÐ»Ð¾ " << a << " Ð² ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸ " << N << " = " << Power(a, N);
 }
 double Power(double a, int n)
 {
