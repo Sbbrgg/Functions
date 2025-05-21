@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Factorial", "Factorial\Fact
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Power", "Power\Power.vcxproj", "{F0E0D2C4-0535-411B-902C-816F5CEA75AD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays", "Arrays\Arrays.vcxproj", "{A4592493-75EA-4747-948E-AD4BBFE354E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{F0E0D2C4-0535-411B-902C-816F5CEA75AD}.Release|x64.Build.0 = Release|x64
 		{F0E0D2C4-0535-411B-902C-816F5CEA75AD}.Release|x86.ActiveCfg = Release|Win32
 		{F0E0D2C4-0535-411B-902C-816F5CEA75AD}.Release|x86.Build.0 = Release|Win32
+		{A4592493-75EA-4747-948E-AD4BBFE354E2}.Debug|x64.ActiveCfg = Debug|x64
+		{A4592493-75EA-4747-948E-AD4BBFE354E2}.Debug|x64.Build.0 = Debug|x64
+		{A4592493-75EA-4747-948E-AD4BBFE354E2}.Debug|x86.ActiveCfg = Debug|Win32
+		{A4592493-75EA-4747-948E-AD4BBFE354E2}.Debug|x86.Build.0 = Debug|Win32
+		{A4592493-75EA-4747-948E-AD4BBFE354E2}.Release|x64.ActiveCfg = Release|x64
+		{A4592493-75EA-4747-948E-AD4BBFE354E2}.Release|x64.Build.0 = Release|x64
+		{A4592493-75EA-4747-948E-AD4BBFE354E2}.Release|x86.ActiveCfg = Release|Win32
+		{A4592493-75EA-4747-948E-AD4BBFE354E2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
