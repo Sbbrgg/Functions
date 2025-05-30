@@ -2,16 +2,22 @@
 using namespace std;
 
 #define tab "\t"
+const int ROWS = 3;
+const int COLS = 4;
 
 void FillRand(int arr[], const int n, int minRand = 0, int maxRand = 100);
 void FillRand(double arr[], const int n, int minRand = 0, int maxRand = 100);
+void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS, int minRand = 0, int maxRand = 100);
 //template - создание шаблона
 //typename - создаёт шаблонный тип данных
 //T - это имя шаблона (T - type)
 template<typename T>
 void Print(T arr[], const int n);
 template<typename T>
+void Print(T arr[ROWS][COLS], const int ROWS, const int COLS);
+template<typename T>
 void Sort(T arr[], const int n);
+
 
 template<typename T>
 T Sum(T arr[], const int n);
@@ -58,6 +64,10 @@ void main()
 	cout << "Среднее-арифметическое элементов массива: " << Avg(brr, SIZE) << endl;
 	cout << "Минимальное значение в массиве: " << MinValueIn(brr, SIZE) << endl;
 	cout << "Максимальное значение в массиве: " << MaxValueIn(brr, SIZE) << endl;
+	
+	int i_arr_2[ROWS][COLS];
+	FillRand(i_arr_2, ROWS, COLS);
+	Print(i_arr_2, ROWS, COLS);
 }
 
 void FillRand(int arr[], const int n, int minRand, int maxRand)
@@ -77,6 +87,16 @@ void FillRand(double arr[], const int n, int minRand, int maxRand)
 		arr[i] /= 100;
 	}
 }
+void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS, int minRand, int maxRand)
+{
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; i++)
+		{
+			arr[i][j] = rand() % (maxRand - minRand) + minRand;
+		}
+	}
+}
 
 template<typename T>
 void Print(T arr[], const int n)
@@ -86,6 +106,17 @@ void Print(T arr[], const int n)
 		cout << arr[i] << tab;
 	}
 	cout << endl;
+}
+template<typename T>
+void Print(T arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			cout << arr[i][j] << tab;
+		}
+	}
 }
 template<typename T>
 void Sort(T arr[], const int n)
